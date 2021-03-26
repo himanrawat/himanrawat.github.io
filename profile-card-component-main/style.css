@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Darkgray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-position: top -532px right 736px, bottom 258% right -24%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  body {
+    background-size: 400px;
+    background-position: top -87% left 515%, bottom -75% right 458%;
+  }
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 10%;
+}
+
+.profile-bg {
+  background-color: #fff;
+  /* height: 52%;
+  width: 23%; */
+  height: 376px;
+  width: 352px;
+  border-radius: 5%;
+  overflow: hidden;
+}
+
+.profile-top-bg {
+  background-image: url(images/bg-pattern-card.svg);
+  height: 140px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile-picture {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-picture img {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  margin-top: -61px;
+  margin-bottom: 20px;
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-weight: 400;
+  color: var(--Darkgray);
+}
+
+.heading {
+  margin-bottom: 10px;
+}
+
+.age {
+  color: var(--Darkgray);
+  margin: 0 5px;
+  font-weight: 400;
+}
+
+.profile-footer {
+  border-top: 1px solid var(--Darkgray);
+}
+
+.profile-footer p {
+  font-weight: 400;
+  color: var(--Darkgray);
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.center-div {
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.center-div div {
+  width: 100%;
+}
+
+.center-div div h3 {
+  padding-bottom: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
